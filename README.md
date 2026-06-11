@@ -4,7 +4,6 @@
 
 A unified, physics-guided federated learning framework for joint early fault detection and remaining useful life (RUL) estimation across multi-operator aircraft engine fleets — without sharing raw sensor data.
 
----
 
 ## Overview
 
@@ -14,7 +13,6 @@ A unified, physics-guided federated learning framework for joint early fault det
 - **Calibrated uncertainty** via quantile regression (Q10/Q50/Q90)
 - Evaluated on **NASA C-MAPSS** and **NASA PHM 2008** benchmarks
 
----
 
 ## Repository Structure
 
@@ -31,7 +29,7 @@ Aircraft_Maintenance/
     └── dataset/                   # PHM 2008 Challenge files (train/test/final_test)
 ```
 
----
+
 
 ## Setup
 
@@ -68,7 +66,7 @@ pip install -r PHM2008/requirements.txt
 jupyter notebook
 ```
 
----
+
 
 ## Datasets
 
@@ -93,7 +91,7 @@ train.txt   test.txt   final_test.txt
 
 Both datasets consist of multivariate run-to-failure time series from turbofan engines. See the `readme.txt` files in each dataset folder for full column descriptions.
 
----
+
 
 ## Running Experiments
 
@@ -120,7 +118,7 @@ Open `PHM2008/PHM08_main_pipeline.ipynb`. Runs the dual-head DS-TCN pipeline wit
 
 Open `PHM2008/PHM08_FL_pipeline.ipynb`. Simulates federated training by splitting engine units across clients. Per-round validation curves, per-client metrics, and predictions are saved to `PHM2008/results/phm08_fl/`.
 
----
+
 
 ## Key Results
 
@@ -131,7 +129,7 @@ Open `PHM2008/PHM08_FL_pipeline.ipynb`. Simulates federated training by splittin
 | PHM 2008 | Centralized | 0.938 | 0.704 | 25.38 | 33.63 |
 | PHM 2008 | Federated | 0.863 | 0.644 | 33.97 | 46.15 |
 
----
+
 
 ## Citation
 
@@ -146,7 +144,7 @@ If you use this code, please cite:
 }
 ```
 
----
+
 
 ## License
 
