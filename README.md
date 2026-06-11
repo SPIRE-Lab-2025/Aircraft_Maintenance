@@ -36,8 +36,8 @@ Aircraft_Maintenance/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/aircraft-engine-prognostics.git
-cd aircraft-engine-prognostics
+git clone https://github.com/SPIRE-Lab-2025/Aircraft_Maintenance.git
+cd Aircraft_Maintenance
 ```
 
 ### 2. Create and activate a virtual environment
